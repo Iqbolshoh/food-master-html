@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodMaster | Taomlar dunyosiga sayohat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Food<span class="accent">Master</span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Bosh sahifa</a></li>
+                <li><a href="#menu" class="nav-link">Menyu</a></li>
+                <li><a href="#about" class="nav-link">Biz haqimizda</a></li>
+                <li><a href="#contact" class="nav-link">Aloqa</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i> 100% Fresh & Organic
+                </div>
+                <h1>Taomlar dunyosiga <span class="gradient-text">sayohat</span></h1>
+                <p>Eng sifatli ingredientlardan tayyorlangan mazali taomlar. Har bir ta'm — bu zavq!</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">
+                        <i class="fas fa-utensils"></i> Menyuni ko'rish
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-phone-alt"></i> Bron qilish
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Taomlar</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Oshpazlar</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="5000">0</div>
+                        <div class="stat-label">Mijozlar</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-main-image">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop" alt="Food">
+                </div>
+                <div class="floating-food food-1">🍕</div>
+                <div class="floating-food food-2">🍔</div>
+                <div class="floating-food food-3">🍜</div>
+                <div class="floating-food food-4">🥗</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Categories -->
+<section class="categories">
+    <div class="container">
+        <div class="categories-grid" id="categoriesGrid">
+            <!-- Categories will be injected -->
+        </div>
+    </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="menu">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Maxsus taklif</span>
+            <h2>Eng <span class="gradient-text">mashhur</span> taomlar</h2>
+            <p>Bizning eng ko'p buyurtma qilinadigan taomlarimiz</p>
+        </div>
+        <div class="menu-filters">
+            <button class="filter-btn active" data-category="all">Barchasi</button>
+            <button class="filter-btn" data-category="breakfast">Nonushta</button>
+            <button class="filter-btn" data-category="lunch">Tushlik</button>
+            <button class="filter-btn" data-category="dinner">Kechki ovqat</button>
+            <button class="filter-btn" data-category="drinks">Ichimliklar</button>
+            <button class="filter-btn" data-category="desserts">Shirinliklar</button>
+        </div>
+        <div class="menu-grid" id="menuGrid">
+            <!-- Menu items will be injected -->
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="about-wrapper">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1556910104-0e8d9f8e7c3d?w=500&h=400&fit=crop" alt="Chef">
+            </div>
+            <div class="about-content">
+                <div class="section-tag">Biz haqimizda</div>
+                <h2>Eng yaxshi <span class="gradient-text">oshpazlar</span> bilan</h2>
+                <p>FoodMaster — bu 2015-yildan beri o'z mijozlariga sifatli va mazali taomlarni yetkazib beruvchi kompaniya. Biz faqat eng yangi va sifatli mahsulotlardan foydalanamiz.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% tabiiy mahsulotlar</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-truck"></i>
+                        <span>Tez yetkazib berish</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <span>Yuqori sifat kafolati</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="section-tag">Aloqa</div>
+                <h2>Biz bilan <span class="gradient-text">bog'laning</span></h2>
+                <p>Buyurtma berish yoki savollaringiz uchun</p>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Manzil</h4>
+                        <p>Toshkent sh., Amir Temur ko'chasi 15</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Telefon</h4>
+                        <p>+998 71 123 45 67</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@foodmaster.uz</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Ish vaqti</h4>
+                        <p>Dushanba - Yakshanba: 09:00 - 22:00</p>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Ismingiz" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Telefon raqam">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" placeholder="Xabaringiz..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-paper-plane"></i> Yuborish
+                    </button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cart Sidebar -->
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <h3><i class="fas fa-shopping-cart"></i> Savatcha</h3>
+        <button class="cart-close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+        <div class="cart-empty">Savatcha bo'sh</div>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Jami:</span>
+            <span id="cartTotal">0 so'm</span>
+        </div>
+        <button class="btn btn-primary w-100" id="checkoutBtn">
+            <i class="fas fa-credit-card"></i> Buyurtma berish
+        </button>
+    </div>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
+
+<!-- Toast -->
+<div id="toast" class="toast"></div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-utensils"></i>
+                <span>Food<span class="accent">Master</span></span>
+                <p>Eng mazali taomlar siz uchun</p>
+            </div>
+            <div class="footer-links">
+                <h4>Menyu</h4>
+                <ul>
+                    <li><a href="#home">Bosh sahifa</a></li>
+                    <li><a href="#menu">Menyu</a></li>
+                    <li><a href="#about">Biz haqimizda</a></li>
+                    <li><a href="#contact">Aloqa</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h4>Ish vaqti</h4>
+                <p><i class="far fa-clock"></i> Dush - Yak: 09:00 - 22:00</p>
+                <p><i class="fas fa-truck"></i> Yetkazib berish: 30-40 daqiqa</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FoodMaster. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
